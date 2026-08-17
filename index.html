@@ -6,7 +6,7 @@
     <title>Παναγιώτης Γαρδάς | Συμβουλευτική και Ψυχοθεραπεία</title>
     <meta
       name="description"
-      content="Ο Παναγιώτης Γαρδάς βρίσκεται σε τριετές εκπαιδευτικό πρόγραμμα στη συμβουλευτική και ψυχοθεραπεία, με συστημικό και πολυτροπικό προσανατολισμό."
+      content="Ο Παναγιώτης Γαρδάς είναι πιστοποιημένος Σύμβουλος Ψυχικής Υγείας με ειδίκευση στη συστημική προσέγγιση και πολυετές επαγγελματικό υπόβαθρο στο marketing, logistics και supply chain."
     />
     <meta name="theme-color" content="#f8f0e6" />
 
@@ -21,6 +21,7 @@
         --accent-soft: #f4e2d6;
         --tone-about: #fbf4ea;
         --tone-services: #f9efe3;
+        --tone-business: #f8ecdf;
         --tone-approach: #f8ecdf;
         --tone-contact: #faefe4;
         --radius: 18px;
@@ -172,6 +173,10 @@
         background: linear-gradient(180deg, var(--tone-services) 0%, #fcf3e8 100%);
       }
 
+      #business.section-band {
+        background: linear-gradient(180deg, var(--tone-business) 0%, #fcefe3 100%);
+      }
+
       #approach.section-band {
         background: linear-gradient(180deg, var(--tone-approach) 0%, #fceddf 100%);
       }
@@ -286,6 +291,10 @@
         color: #9b6646;
       }
 
+      #business .eyebrow {
+        color: #8d5f46;
+      }
+
       #approach .eyebrow {
         color: #956b50;
       }
@@ -351,6 +360,47 @@
       .service-grid {
         display: grid;
         gap: 1rem;
+      }
+
+      .service-group {
+        background: linear-gradient(180deg, rgba(255, 249, 242, 0.9) 0%, rgba(253, 241, 227, 0.82) 100%);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: var(--space-3);
+      }
+
+      .service-group h3 {
+        margin: 0;
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+
+      .service-group > p {
+        margin: 0.4rem 0 0;
+        color: var(--muted);
+      }
+
+      .service-list {
+        list-style: none;
+        padding: 0;
+        margin: var(--space-2) 0 0;
+        display: grid;
+        gap: 0.7rem;
+      }
+
+      .service-list li {
+        border-top: 1px dashed rgba(180, 122, 91, 0.25);
+        padding-top: 0.7rem;
+      }
+
+      .service-list li strong {
+        display: block;
+        font-size: 0.98rem;
+      }
+
+      .service-list li span {
+        color: var(--muted);
+        font-size: 0.95rem;
       }
 
       .service-item h3 {
@@ -476,6 +526,7 @@
         <ul class="nav-links">
           <li><a href="#about">Σχετικά</a></li>
           <li><a href="#services">Υπηρεσίες</a></li>
+          <li><a href="#business">Business</a></li>
           <li><a href="#approach">Προσέγγιση</a></li>
           <li><a class="nav-cta" href="#contact">Επικοινωνία</a></li>
         </ul>
@@ -487,9 +538,9 @@
         <div class="hero-grid">
           <div>
             <p class="eyebrow fade-in">Συμβουλευτική και Ψυχοθεραπεία</p>
-            <h1 id="hero-title" class="fade-in delay-1">Ένας ήρεμος χώρος για συζήτηση, κατανόηση και σχέση.</h1>
+            <h1 id="hero-title" class="fade-in delay-1">Συστημική συμβουλευτική και ψυχοθεραπεία με ολιστική ματιά.</h1>
             <p class="lead fade-in delay-2">
-              Ο Παναγιώτης Γαρδάς βρίσκεται σε εξέλιξη τριετούς εκπαίδευσης στη συμβουλευτική και ψυχοθεραπεία.
+              Πιστοποιημένος Σύμβουλος Ψυχικής Υγείας με ειδίκευση στη συστημική προσέγγιση και συνδυασμό κλινικής και επαγγελματικής εμπειρίας.
             </p>
             <div class="hero-actions fade-in delay-2">
               <a class="btn btn-primary" href="#contact">Επικοινωνία</a>
@@ -499,7 +550,7 @@
 
           <aside class="hero-aside fade-in delay-2" aria-label="Τρέχον επαγγελματικό στάδιο">
             <p>
-              <strong>Τρέχον στάδιο:</strong> Εκπαίδευση σε εξέλιξη, με ένα έτος εποπτευόμενης πρακτικής άσκησης.
+              <strong>Ιδιότητα:</strong> Πιστοποιημένος Σύμβουλος Ψυχικής Υγείας με ειδίκευση στη συστημική προσέγγιση.
             </p>
           </aside>
         </div>
@@ -514,15 +565,15 @@
         <div class="about-grid">
           <article class="card">
             <p>
-              [Σύντομο επαγγελματικό βιογραφικό]
+              Ο Παναγιώτης Γαρδάς εργάζεται με επίκεντρο τη σχέση, το πλαίσιο ζωής και τη συστημική κατανόηση των δυσκολιών.
             </p>
             <ul class="details-list" aria-label="Στοιχεία εκπαίδευσης">
-              <li><strong>Εκπαίδευση:</strong> Τριετές εκπαιδευτικό πρόγραμμα στη συμβουλευτική και ψυχοθεραπεία (σε εξέλιξη).</li>
+              <li><strong>Ιδιότητα:</strong> Πιστοποιημένος Σύμβουλος Ψυχικής Υγείας.</li>
+              <li><strong>Εξειδίκευση:</strong> Συστημική προσέγγιση στη συμβουλευτική και ψυχοθεραπεία.</li>
               <li>
-                <strong>Προσανατολισμός:</strong> Συστημική προσέγγιση μέσα σε πολυτροπικό / ολιστικό πλαίσιο,
-                με θεματικές όπως τραύμα, κακοποίηση, συμβουλευτική ζεύγους, συμβουλευτική και ψυχοθεραπεία.
+                <strong>Ακαδημαϊκό υπόβαθρο:</strong> Bachelor στο πεδίο του Marketing.
               </li>
-              <li><strong>Πρακτικό μέρος:</strong> Ένα έτος εποπτευόμενης πρακτικής άσκησης.</li>
+              <li><strong>Επαγγελματική εμπειρία:</strong> 13+ χρόνια σε ρόλους marketing, logistics και supply chain.</li>
             </ul>
           </article>
 
@@ -535,34 +586,56 @@
       <section id="services" class="section-band" aria-labelledby="services-title">
         <div class="section-head">
           <p class="eyebrow">Υπηρεσίες</p>
-          <h2 id="services-title">Πεδία συνεργασίας</h2>
-          <p>[Οι υπηρεσίες θα οριστικοποιηθούν]</p>
+          <h2 id="services-title">Συμβουλευτική και ψυχοθεραπευτική υποστήριξη</h2>
+          <p>Το βασικό πεδίο εργασίας αφορά τη συστημική συμβουλευτική και ψυχοθεραπεία σε ατομικό, σχεσιακό και ομαδικό επίπεδο.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-group">
+            <h3>Ατομικό και σχεσιακό πλαίσιο</h3>
+            <p>Συστημική εργασία με επίκεντρο το άτομο, τις σχέσεις και τα επαναλαμβανόμενα μοτίβα.</p>
+            <ul class="service-list">
+              <li><strong>Ατομική συμβουλευτική</strong><span>Για προσωπικά, συναισθηματικά και σχεσιακά ζητήματα.</span></li>
+              <li><strong>Συμβουλευτική ζεύγους</strong><span>Για επικοινωνία, όρια, σύνδεση και διαχείριση συγκρούσεων.</span></li>
+              <li><strong>Συμβουλευτική παιδιών και εφήβων</strong><span>Με συνεργασία οικογένειας και πλαισίου.</span></li>
+            </ul>
+          </article>
+
+          <article class="service-group">
+            <h3>Ομάδες και εκπαίδευση ενηλίκων</h3>
+            <p>Δομημένες συναντήσεις με συστημικό προσανατολισμό για μάθηση, αναστοχασμό και ανάπτυξη δεξιοτήτων.</p>
+            <ul class="service-list">
+              <li><strong>Group therapy / θεραπευτικές ομάδες</strong><span>Υποστήριξη μέσα από τη δυναμική της ομάδας.</span></li>
+              <li><strong>Ομαδικές παρεμβάσεις και εργαστήρια</strong><span>Θεματικές συναντήσεις για κοινές ανάγκες.</span></li>
+              <li><strong>Εκπαίδευση ενηλίκων</strong><span>Συντονισμός και βιωματική μάθηση σε επαγγελματικά ή εκπαιδευτικά πλαίσια.</span></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="business" class="section-band" aria-labelledby="business-title">
+        <div class="section-head">
+          <p class="eyebrow">Business Services</p>
+          <h2 id="business-title">Συμβουλευτική με business προσανατολισμό</h2>
+          <p>Με βάση 13+ χρόνια εμπειρίας σε marketing, logistics και supply chain, προσφέρονται στοχευμένες υπηρεσίες για επαγγελματίες και ομάδες.</p>
         </div>
 
         <div class="service-grid">
           <article class="card service-item">
-            <h3>Ατομική συμβουλευτική (συστημική οπτική)</h3>
-            <p>[Σύντομη περιγραφή πλαισίου και στόχου]</p>
+            <h3>Sales και εμπορική οργάνωση</h3>
+            <p>Στήσιμο δομών συνεργασίας, ρόλων και διαδικασιών με έμφαση στη συνέπεια της ομάδας.</p>
           </article>
           <article class="card service-item">
-            <h3>Συμβουλευτική ζεύγους</h3>
-            <p>[Σύντομη περιγραφή για τα μοτίβα επικοινωνίας και σχέσης]</p>
+            <h3>Marketing στρατηγική και επικοινωνία</h3>
+            <p>Καθαρή τοποθέτηση, μηνύματα και εσωτερική ευθυγράμμιση για πιο λειτουργική επικοινωνία.</p>
           </article>
           <article class="card service-item">
-            <h3>Ομαδικές συναντήσεις / εργαστήρια</h3>
-            <p>[Σύντομη περιγραφή δομής και θεματικής]</p>
+            <h3>Logistics και supply chain συνεργασία</h3>
+            <p>Υποστήριξη σε ροές εργασίας, διατμηματική συνεργασία και αποτελεσματικότητα συστημάτων.</p>
           </article>
           <article class="card service-item">
-            <h3>Συζητητικές ή βιωματικές συναντήσεις</h3>
-            <p>[Σύντομη περιγραφή με συστημικό προσανατολισμό]</p>
-          </article>
-          <article class="card service-item">
-            <h3>Συμβουλευτική για οργανισμούς και εταιρείες</h3>
-            <p>[Σύντομη περιγραφή συνεργασίας]</p>
-          </article>
-          <article class="card service-item">
-            <h3>Υποστήριξη διαδοχής σε οικογενειακές επιχειρήσεις</h3>
-            <p>[Σύντομη περιγραφή πλαισίου μετάβασης]</p>
+            <h3>Ολιστική συμβουλευτική επαγγελματικής μετάβασης</h3>
+            <p>Συνδυασμός συστημικής και επιχειρησιακής οπτικής σε περιόδους αλλαγής και αναδιάρθρωσης.</p>
           </article>
         </div>
       </section>
@@ -570,18 +643,18 @@
       <section id="approach" class="section-band" aria-labelledby="approach-title">
         <div class="section-head">
           <p class="eyebrow">Προσέγγιση</p>
-          <h2 id="approach-title">Συστημικός τρόπος σκέψης και εργασίας</h2>
+          <h2 id="approach-title">Μία ολοκληρωμένη συστημική προσέγγιση</h2>
         </div>
 
         <div class="approach-box">
           <p>
             Η συστημική προσέγγιση εστιάζει στις σχέσεις, στα πλαίσια ζωής και στα μοτίβα αλληλεπίδρασης.
-            Η τρέχουσα εκπαίδευση εξελίσσεται σε πολυτροπικό πλαίσιο με έμφαση στο νόημα, στο πλαίσιο και στη συνεργατική διερεύνηση.
+            Στη συγκεκριμένη πρακτική, η ψυχική υγεία και η επαγγελματική πραγματικότητα αντιμετωπίζονται ως αλληλένδετα πεδία.
           </p>
           <ul class="approach-points">
-            <li>[Συγκεκριμένα μοντέλα και εργαλεία θα προστεθούν]</li>
-            <li>[Δομή συνεδριών και διαδικασία συνεργασίας θα προστεθούν]</li>
-            <li>[Πρακτικές λεπτομέρειες και όρια πλαισίου θα προστεθούν]</li>
+            <li>Εστίαση στο σύστημα σχέσεων και όχι μόνο στο μεμονωμένο σύμπτωμα.</li>
+            <li>Συνδυασμός θεραπευτικής κατανόησης και πρακτικής οργάνωσης όπου χρειάζεται.</li>
+            <li>Σαφές πλαίσιο συνεργασίας, με σεβασμό στα όρια και στον ρυθμό κάθε ανθρώπου ή ομάδας.</li>
           </ul>
         </div>
       </section>
@@ -591,8 +664,7 @@
           <p class="eyebrow">Επικοινωνία</p>
           <h2 id="contact-title">Επικοινωνήστε</h2>
           <p>
-            Για ερωτήματα σχετικά με ατομικές ή ομαδικές συνεργασίες,
-            καθώς και για συνεργασίες με οργανισμούς.
+            Για ατομικές, ομαδικές ή business συνεργασίες.
           </p>
         </div>
 
@@ -614,7 +686,7 @@
       <div class="main">
         <p>
           <strong>Παναγιώτης Γαρδάς</strong><br />
-          Συμβουλευτική και Ψυχοθεραπεία | Εκπαιδευτικό πρόγραμμα σε εξέλιξη
+          Πιστοποιημένος Σύμβουλος Ψυχικής Υγείας | Συστημική προσέγγιση
         </p>
         <p>© <span id="year"></span> Παναγιώτης Γαρδάς. Με επιφύλαξη κάθε δικαιώματος.</p>
       </div>
